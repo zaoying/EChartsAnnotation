@@ -79,7 +79,8 @@ public class EChartsAnnotationProcessor {
         }
         return current;
     }
-    static HashMap<String,Object> phrase(Object object){
+    static HashMap<String,Object> phrase(Object object)throws NullPointerException{
+        if(object==null)throw new NullPointerException();
         HashMap<String,Object> head=new HashMap<>();
         Class clazz=object.getClass();
         Annotation singleChart=clazz.getAnnotation(SingleChart.class);

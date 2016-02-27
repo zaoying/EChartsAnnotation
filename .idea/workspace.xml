@@ -4432,15 +4432,14 @@
       <file leaf-file-name="EChartsAnnotationProcessor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/EChartsAnnotationProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40983605">
-              <caret line="105" column="59" selection-start-line="105" selection-start-column="59" selection-end-line="105" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.45901638">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#phraseSingleChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
                 <element signature="method#phraseDuplexChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
                 <element signature="method#turnMapIntoList#0;class#EChartsAnnotationProcessor#0" expanded="false" />
                 <element signature="method#getElementByKeyFromTree#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-                <element signature="method#phrase#0;class#EChartsAnnotationProcessor#0" expanded="false" />
                 <element signature="method#getFieldValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
                 <element signature="method#checkClass#0;class#EChartsAnnotationProcessor#0" expanded="false" />
                 <element signature="method#getAnnotationValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
@@ -4541,7 +4540,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1452" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
     <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -4924,7 +4924,7 @@
     <option name="totallyTimeSpent" value="23400000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1452" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -4937,7 +4937,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32506528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24930556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32637075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -5013,7 +5013,6 @@
             <element signature="method#phraseDuplexChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#turnMapIntoList#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getElementByKeyFromTree#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phrase#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getFieldValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#checkClass#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getAnnotationValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
@@ -5072,7 +5071,6 @@
             <element signature="method#phraseDuplexChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#turnMapIntoList#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getElementByKeyFromTree#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phrase#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getFieldValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#checkClass#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getAnnotationValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
@@ -5131,7 +5129,6 @@
             <element signature="method#phraseDuplexChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#turnMapIntoList#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getElementByKeyFromTree#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phrase#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getFieldValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#checkClass#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getAnnotationValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
@@ -5187,7 +5184,6 @@
             <element signature="method#phraseDuplexChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#turnMapIntoList#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getElementByKeyFromTree#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phrase#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getFieldValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#checkClass#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getAnnotationValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
@@ -5417,15 +5413,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/EChartsAnnotationProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40983605">
-          <caret line="105" column="59" selection-start-line="105" selection-start-column="59" selection-end-line="105" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.45901638">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#phraseSingleChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#phraseDuplexChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#turnMapIntoList#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getElementByKeyFromTree#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phrase#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getFieldValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#checkClass#0;class#EChartsAnnotationProcessor#0" expanded="false" />
             <element signature="method#getAnnotationValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
