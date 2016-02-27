@@ -109,8 +109,12 @@ public class EChartsAnnotationProcessor {
         try {
             value = field.get(object);
             if (value != null) {
-                if(value instanceof Number)if (0.0 == 0) value = null;
-                else if (value.equals('\0')) value = null;
+                if(value instanceof Number){
+                    Number number= (Number) value;
+                    if(number.doubleValue()==0.0)value = null;
+                }
+                else if(value instanceof Boolean){if(!((boolean) value))value = null;}
+                else if(value instanceof Character&&value.equals('\0')) value = null;
             }
         } catch (IllegalAccessException e) {
             e.printStackTrace();
