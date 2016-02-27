@@ -1,0 +1,7 @@
+package cn.edu.gdut.zaoying;
+
+/**
+ * Created by 祖荣 on 2016/2/21 0021.
+ */
+public @interface Embedded {
+}
