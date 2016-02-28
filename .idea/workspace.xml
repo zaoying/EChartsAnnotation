@@ -4420,21 +4420,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="ECharts.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ECharts.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/ECharts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.26890758">
+              <caret line="172" column="34" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CombinedChart.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CombinedChart.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/Charts/CombinedChart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.920082">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -4444,20 +4444,8 @@
         <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/EChartsAnnotationProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#phraseSingleChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-                <element signature="method#phraseDuplexChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-                <element signature="method#turnMapIntoList#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-                <element signature="method#getElementByKeyFromTree#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-                <element signature="method#phrase#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-                <element signature="method#getFieldValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-                <element signature="method#checkClass#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-                <element signature="method#getAnnotationValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-                <element signature="method#addAnnotationToHashMap#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-                <element signature="method#getAnnotationTypeByEndWord#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-              </folding>
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -4467,7 +4455,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-              <folding />
+              <folding>
+                <element signature="e#375#376#0" expanded="false" />
+                <element signature="e#402#403#0" expanded="false" />
+                <element signature="e#442#443#0" expanded="false" />
+                <element signature="e#474#475#0" expanded="false" />
+                <element signature="e#507#508#0" expanded="false" />
+                <element signature="e#534#535#0" expanded="false" />
+                <element signature="e#576#577#0" expanded="false" />
+                <element signature="e#608#609#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -4476,8 +4473,11 @@
         <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/Charts/LineChart.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="5" selection-start-line="13" selection-start-column="24" selection-end-line="33" selection-end-column="5" />
-              <folding />
+              <caret line="25" column="5" selection-start-line="13" selection-start-column="24" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <marker date="1456561831897" expanded="true" signature="300:342" placeholder="/**...*/" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -4601,6 +4601,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -4629,46 +4632,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zaoying" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EChartsAnnotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EChartsAnnotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zaoying" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Charts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EChartsAnnotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EChartsAnnotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -4679,9 +4642,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4887,18 +4847,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -5007,11 +4955,12 @@
       <workItem from="1456464080163" duration="7510000" />
       <workItem from="1456544916271" duration="4356000" />
       <workItem from="1456552186842" duration="867000" />
+      <workItem from="1456667008444" duration="1368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23400000" />
+    <option name="totallyTimeSpent" value="24768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -5019,27 +4968,27 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32392472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32506528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24930556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24928367" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32392472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32506528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32637075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -5090,19 +5039,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#phraseSingleChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phraseDuplexChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#turnMapIntoList#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getElementByKeyFromTree#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phrase#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getFieldValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#checkClass#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getAnnotationValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#addAnnotationToHashMap#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getAnnotationTypeByEndWord#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5149,19 +5086,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#phraseSingleChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phraseDuplexChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#turnMapIntoList#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getElementByKeyFromTree#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phrase#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getFieldValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#checkClass#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getAnnotationValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#addAnnotationToHashMap#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getAnnotationTypeByEndWord#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5208,19 +5133,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#phraseSingleChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phraseDuplexChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#turnMapIntoList#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getElementByKeyFromTree#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phrase#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getFieldValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#checkClass#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getAnnotationValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#addAnnotationToHashMap#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getAnnotationTypeByEndWord#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5264,19 +5177,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#phraseSingleChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phraseDuplexChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#turnMapIntoList#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getElementByKeyFromTree#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phrase#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getFieldValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#checkClass#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getAnnotationValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#addAnnotationToHashMap#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getAnnotationTypeByEndWord#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5470,10 +5371,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/Charts/LineChart.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/Charts/CombinedChart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="5" selection-start-line="13" selection-start-column="24" selection-end-line="33" selection-end-column="5" />
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/EChartsAnnotationProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -5482,42 +5391,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#375#376#0" expanded="false" />
+            <element signature="e#402#403#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#474#475#0" expanded="false" />
+            <element signature="e#507#508#0" expanded="false" />
+            <element signature="e#534#535#0" expanded="false" />
+            <element signature="e#576#577#0" expanded="false" />
+            <element signature="e#608#609#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/EChartsAnnotationProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/Charts/LineChart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <caret line="25" column="5" selection-start-line="13" selection-start-column="24" selection-end-line="14" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#phraseSingleChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phraseDuplexChart#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#turnMapIntoList#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getElementByKeyFromTree#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#phrase#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getFieldValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#checkClass#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getAnnotationValue#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#addAnnotationToHashMap#0;class#EChartsAnnotationProcessor#0" expanded="false" />
-            <element signature="method#getAnnotationTypeByEndWord#0;class#EChartsAnnotationProcessor#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <marker date="1456561831897" expanded="true" signature="300:342" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/ECharts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/gdut/zaoying/Charts/CombinedChart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.920082">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.26890758">
+          <caret line="172" column="34" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="34" />
           <folding />
         </state>
       </provider>
