@@ -11,7 +11,7 @@
 [Option定义](http://echarts.baidu.com/documents/cn/option.json?_v_=1453695515722 "点击下载JSON文件")  
 从上述URL得到JSON文件总体上可以解析成树，除了series、dataZoom和visualMap三个节点需要特殊处理，  
 其他非叶子节点均可映射成文件系统的文件夹，而叶子节点则映射成Java源文件即注解文件。  
-![](https://github.com/zaoying/EChartsAnnotation/blob/master/doc/Option_Annotation.png)
+![](https://github.com/zaoying/EChartsAnnotation/blob/master/doc/Option_Annotation.png)  
 总共有3700+个注解！这里生成的注解只能用于标记Bean类的域`Field`  
 根据JSON树的叶子节点的Type属性中的不同类型，3700多注解分成6种不同类型:  
 
