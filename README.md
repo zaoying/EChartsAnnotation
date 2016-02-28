@@ -2,9 +2,9 @@
   用原生Java注解来映射ECharts的`Option`类，提供Annotation到`JSON`的转换功能。
   
 ## 思路 How it works
-`Step 1`在后台使用Annotation来标注Bean类  
-`Step 2`注解处理器转换成JSON树  
-`Step 3`使用JSON系列化工具包（fastjson/gson）输出到前端页面  
+`1`在后台使用Annotation来标注Bean类  
+`2`注解处理器转换成JSON树  
+`3`使用JSON系列化工具包（fastjson/gson）输出到前端页面  
 
 ## 注解 Annotation
 基于ECharts3.0制作
@@ -20,9 +20,9 @@ boolean|boolean|false|Boolean|布尔类型
 Color|int|0|Hex|Web颜色映射成Java整型，由于常用16进制表示所以后缀是Hex
 number|Number|0|Number|抽象类Number是int、double等基本类型的父类，一律转为double
 string|String|""|String|字符串类型
-Array|List|null|Array|数组类型一律转成泛型List
-Function|Object|null|Function|由于Java不支持函数类型，所以需要重载Object的toString方法输出字符串的“函数”
-*|Object|null|All|参考Function类型
+Array|List|没有默认值|Array|数组类型一律转成泛型List
+Function|Object|没有默认值|Function|由于Java不支持函数类型，所以需要重载Object的toString方法输出字符串的“函数”
+*|Object|没有默认值|All|参考Function类型
 
 ## 注解处理器 AnnotationProcessor
 
