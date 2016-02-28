@@ -17,6 +17,8 @@ public class CombinedChart {
     @AddSeries
     LineChart lineChart;
     @AddSeries
+    Line2Chart line2Chart;
+    @AddSeries
     BarChart barChart;
 
     public CombinedChart(String title) {
@@ -24,6 +26,9 @@ public class CombinedChart {
         lineChart = new LineChart();
         lineChart.setName("折线图");
         lineChart.setData(new double[]{1,2,3,4});
+        line2Chart = new Line2Chart();
+        line2Chart.setName("折线图二");
+        line2Chart.setData(new double[]{1,2,3,4});
         barChart = new BarChart();
         barChart.setName("条形图");
         barChart.setData(new double[]{5,6,7,8});
