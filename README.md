@@ -1,14 +1,14 @@
 # ECharts的Java注解框架 EChartsAnnotation
-  用原生Java注解来映射ECharts的Option类，提供Annotation到JSON的转换功能。
+  用原生Java注解来映射ECharts的`Option`类，提供Annotation到`JSON`的转换功能。
   
 ## 思路 How it works
-* Step 1：在后台使用Annotation来标注Bean类
-* Step 2：注解处理器转换成JSON树
-* Step 3：使用JSON系列化工具包（fastjson/gson）输出到前端页面
+`Step 1`在后台使用Annotation来标注Bean类  
+`Step 2`注解处理器转换成JSON树  
+`Step 3`使用JSON系列化工具包（fastjson/gson）输出到前端页面  
 
 ## 注解 Annotation
     基于ECharts3.0制作
-    >http://echarts.baidu.com/documents/cn/option.json?_v_=1453695515722
+    ![Option定义]http://echarts.baidu.com/documents/cn/option.json?_v_=1453695515722
     
     从上述URL得到JSON文件总体上可以解析成树，除了series、dataZoom和visualMap三个节点需要特殊处理，其他非叶子节点均可映射成文件系统的文件夹，而叶子节点则映射成Java源文件即注解文件。
     总共有3700+个注解！
