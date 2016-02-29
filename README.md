@@ -55,4 +55,28 @@ Function|Object|无|Function|由于Java不支持函数类型，所以需要重�
 只能用于`DuplexChart`的域`Field`，若域不为null且域的类源文件被`SingleChart`注解标记，  
 将会提取源文件中`visualMap`下的注解并添加到`DuplexChart`   
 ## 如何使用 Get Started
-`1`
+`1`[添加EChartsAnnotation到项目](https://github.com/zaoying/EChartsAnnotation/blob/master/out/artifacts/EChartsAnnotaion/EChartsAnnotaion.jar)
+`2`增加LineChart.java如下
+```Java
+@SingleChart(exportTo = "lineChart")
+public class LineChart {
+    @NameString
+    String name;
+    @DataArray
+    double[] data;
+}
+```
+`3`调用注解处理器
+```Java
+import cn.edu.gdut.zaoying.Charts.CombinedChart;
+
+public class EChartsTest {
+    public static void main(String[] args) {
+      LineChart lineChart=new LineChart();
+      lineChart.name="线性表一";
+      lineChart.data=new double[]{1,2,3,4};
+      Object json=EChartsAnnotationProcessor.phraseSingleChart(lineChart);
+      System.out.print(JSON.toJSONString(json));
+    }
+}
+```
