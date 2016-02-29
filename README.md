@@ -55,4 +55,4 @@ Function|Object|无|Function|由于Java不支持函数类型，所以需要重�
 只能用于`DuplexChart`的域`Field`，若域不为null且域的类源文件被`SingleChart`注解标记，  
 将会提取源文件中`visualMap`下的注解并添加到`DuplexChart`   
 ## 如何使用 Get Started
-
+`1`
