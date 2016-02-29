@@ -1,6 +1,5 @@
 package cn.edu.gdut.zaoying.Charts;
 
-import cn.edu.gdut.zaoying.Option.BackgroundColorHex;
 import cn.edu.gdut.zaoying.Option.series.bar.DataArray;
 import cn.edu.gdut.zaoying.Option.series.bar.NameString;
 import cn.edu.gdut.zaoying.SingleChart;

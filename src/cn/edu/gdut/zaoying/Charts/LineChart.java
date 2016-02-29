@@ -1,10 +1,8 @@
 package cn.edu.gdut.zaoying.Charts;
 
-import cn.edu.gdut.zaoying.Option.title.TextString;
-import cn.edu.gdut.zaoying.SingleChart;
-import cn.edu.gdut.zaoying.Option.BackgroundColorHex;
 import cn.edu.gdut.zaoying.Option.series.line.DataArray;
 import cn.edu.gdut.zaoying.Option.series.line.NameString;
+import cn.edu.gdut.zaoying.SingleChart;
 
 
 /**
