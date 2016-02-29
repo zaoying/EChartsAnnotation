@@ -55,9 +55,13 @@ Function|Object|无|Function|由于Java不支持函数类型，所以需要重�
 只能用于`DuplexChart`的域`Field`，若域不为null且域的类源文件被`SingleChart`注解标记，  
 将会提取源文件中`visualMap`下的注解并添加到`DuplexChart`   
 ## 如何使用 Get Started
-`1`[添加EChartsAnnotation到项目](https://github.com/zaoying/EChartsAnnotation/blob/master/out/artifacts/EChartsAnnotaion/EChartsAnnotaion.jar)
-`2`增加LineChart.java如下
+`1`[添加EChartsAnnotation到项目](https://github.com/zaoying/EChartsAnnotation/blob/master/out/artifacts/EChartsAnnotaion/EChartsAnnotaion.jar)  
+`2`增加LineChart折线图
 ```Java
+import cn.edu.gdut.zaoying.Option.series.line.DataArray;
+import cn.edu.gdut.zaoying.Option.series.line.NameString;
+import cn.edu.gdut.zaoying.SingleChart;
+
 @SingleChart(exportTo = "lineChart")
 public class LineChart {
     @NameString
@@ -66,7 +70,7 @@ public class LineChart {
     double[] data;
 }
 ```
-`3`调用注解处理器
+`3`调用简单图表处理器
 ```Java
 import cn.edu.gdut.zaoying.Charts.CombinedChart;
 
@@ -77,6 +81,73 @@ public class EChartsTest {
       lineChart.data=new double[]{1,2,3,4};
       Object json=EChartsAnnotationProcessor.phraseSingleChart(lineChart);
       System.out.print(JSON.toJSONString(json));
+    }
+}
+```
+`4`编写更复杂的组合图表  
+####编写折线图二
+```Java
+import cn.edu.gdut.zaoying.Option.series.line.DataArray;
+import cn.edu.gdut.zaoying.Option.series.line.NameString;
+import cn.edu.gdut.zaoying.SingleChart;
+
+@SingleChart
+public class Line2Chart {
+    @NameString
+    String name;
+    @DataArray
+    double[] data;
+}
+```
+####编写条形图
+```Java
+import cn.edu.gdut.zaoying.Option.series.bar.DataArray;
+import cn.edu.gdut.zaoying.Option.series.bar.NameString;
+import cn.edu.gdut.zaoying.SingleChart;
+
+@SingleChart
+public class BarChart {
+    @NameString
+    String name;
+    @DataArray
+    double[] data;
+}
+```
+####CombinedChart组合图表
+```Java
+@DuplexChart
+public class CombinedChart {
+    @TextString
+    String title;
+    @BackgroundColorHex(value = 0xfff)
+    int backgroundColor;
+    @AddSeries
+    LineChart lineChart;
+    @AddSeries
+    Line2Chart line2Chart;
+    @AddSeries
+    BarChart barChart;
+
+    public CombinedChart(String title) {
+        this.title = title;
+        lineChart = new LineChart();
+        lineChart.setName("折线图");
+        lineChart.setData(new double[]{1,2,3,4});
+        line2Chart = new Line2Chart();
+        line2Chart.setName("折线图二");
+        line2Chart.setData(new double[]{1,2,3,4});
+        barChart = new BarChart();
+        barChart.setName("条形图");
+        barChart.setData(new double[]{5,6,7,8});
+    }
+}
+```
+`5`调用组合图表处理器
+```Java
+public class EChartsTest {
+    public static void main(String[] args) {
+        Object json=EChartsAnnotationProcessor.phraseDuplexChart(new CombinedChart("组合图表"));
+        System.out.print(JSON.toJSONString(json));
     }
 }
 ```
