@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="EChartsAnnotaion">
+    <output-path>$PROJECT_DIR$/out/artifacts/EChartsAnnotaion</output-path>
+    <root id="archive" name="EChartsAnnotaion.jar">
+      <element id="module-output" name="ECharts" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/production/ECharts/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
