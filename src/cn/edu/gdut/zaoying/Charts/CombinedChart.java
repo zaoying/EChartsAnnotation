@@ -8,7 +8,7 @@ import cn.edu.gdut.zaoying.Option.title.TextString;
 /**
  * Created by huang on 2016/2/26 0026.
  */
-@DuplexChart
+@DuplexChart(extendFrom = "templates/combinedChart.json")
 public class CombinedChart {
     @TextString
     String title;

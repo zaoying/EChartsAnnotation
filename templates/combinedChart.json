@@ -1,0 +1,1 @@
+{"series":[{"name":"折线图","data":[1.0,2.0,3.0,4.0],"type":"line"},{"name":"折线图二","data":[1.0,2.0,3.0,4.0],"type":"line"},{"name":"条形图","data":[5.0,6.0,7.0,8.0],"type":"bar"}],"title":{"text":"组合图表"},"backgroundColor":"#fff"}

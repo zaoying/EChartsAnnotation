@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="EChartsAnnotaion">
+  <artifact type="jar" name="EChartsAnnotaion">
     <output-path>$PROJECT_DIR$/out/artifacts/EChartsAnnotaion</output-path>
     <root id="archive" name="EChartsAnnotaion.jar">
       <element id="module-output" name="ECharts" />

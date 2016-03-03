@@ -8,7 +8,7 @@ import cn.edu.gdut.zaoying.SingleChart;
 /**
  * Created by 祖荣 on 2016/2/7 0007.
  */
-@SingleChart(exportTo = "lineChart")
+@SingleChart(extendFrom = "templates/combinedChart.json",exportTo = "lineChart")
 public class LineChart {
     @NameString
     String name;
