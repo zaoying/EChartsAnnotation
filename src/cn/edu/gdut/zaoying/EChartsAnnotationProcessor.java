@@ -43,7 +43,7 @@ public class EChartsAnnotationProcessor {
             processor.preParseChart(extendFrom);
             head=processor.parseDuplexChart(object);
         }
-        if(exportTo!=null){
+        if(!"".equals(exportTo)){
             processor.exportToFile(exportTo);
         }
         return head;
@@ -226,6 +226,8 @@ public class EChartsAnnotationProcessor {
         Map<String,Object> current = head;
         for (int i=0;i<keys.length-1;i++){
             String key=keys[i];
+            if(key.equals("p0"))key="0";//原为Option.series.markLine.data.0，由于Java语法不允许以数字开头，所以改成p0,现在再改成0
+            else if(key.equals("p1"))key="1";//原为Option.series.markLine.data.1，由于Java语法不允许以数字开头，所以改成p1,现在再改成1
             if(current.containsKey(key)){
                 Object object=current.get(key);
                 current= (Map<String, Object>)object;
