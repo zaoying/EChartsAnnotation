@@ -55,6 +55,7 @@ Function|Object|无|Function|由于Java不支持函数类型，所以需要重�
 只能用于`DuplexChart`的域`Field`，若域不为null且域的类源文件被`SingleChart`注解标记，  
 将会提取源文件中`visualMap`下的注解并添加到`DuplexChart`   
 ## 如何使用 Get Started
+`phraseSingleChart`和`phraseDuplexChart`已合并到`parseChart`，不用再区分两者。
 `1`[添加EChartsAnnotation到项目](/out/artifacts/EChartsAnnotaion/EChartsAnnotaion.jar)  
 `2`增加LineChart折线图
 ```Java
@@ -70,16 +71,14 @@ public class LineChart {
     double[] data;
 }
 ```
-`3`调用简单图表处理器
+`3`调用图表处理器
 ```Java
-import cn.edu.gdut.zaoying.Charts.CombinedChart;
-
 public class EChartsTest {
     public static void main(String[] args) {
       LineChart lineChart=new LineChart();
       lineChart.name="线性表一";
       lineChart.data=new double[]{1,2,3,4};
-      Object json=EChartsAnnotationProcessor.phraseSingleChart(lineChart);
+      Object json=EChartsAnnotationProcessor.parseChart(lineChart);
       System.out.print(JSON.toJSONString(json));
     }
 }
@@ -142,11 +141,11 @@ public class CombinedChart {
     }
 }
 ```
-`5`调用组合图表处理器
+`5`调用图表处理器
 ```Java
 public class EChartsTest {
     public static void main(String[] args) {
-        Object json=EChartsAnnotationProcessor.phraseDuplexChart(new CombinedChart("组合图表"));
+        Object json=EChartsAnnotationProcessor.parseChart(new CombinedChart("组合图表"));
         System.out.print(JSON.toJSONString(json));
     }
 }
