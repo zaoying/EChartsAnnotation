@@ -56,7 +56,7 @@ Function|Object|无|Function|由于Java不支持函数类型，所以需要重�
 将会提取源文件中`visualMap`下的注解并添加到`DuplexChart`   
 ## 如何使用 Get Started
 `phraseSingleChart`和`phraseDuplexChart`已合并到`parseChart`，不用再区分两者。  
-`1`添加EChartsAnnotation到项目
+`1`添加EChartsAnnotation到项目  
 maven  
 ```XML
 <dependency>
@@ -97,7 +97,7 @@ public class EChartsTest {
 }
 ```
 `4`编写更复杂的组合图表  
-####编写折线图二
+######编写折线图二
 ```Java
 import cn.edu.gdut.zaoying.Option.series.line.DataArray;
 import cn.edu.gdut.zaoying.Option.series.line.NameString;
@@ -111,7 +111,7 @@ public class Line2Chart {
     double[] data;
 }
 ```
-####编写条形图
+######编写条形图
 ```Java
 import cn.edu.gdut.zaoying.Option.series.bar.DataArray;
 import cn.edu.gdut.zaoying.Option.series.bar.NameString;
@@ -125,7 +125,7 @@ public class BarChart {
     double[] data;
 }
 ```
-####CombinedChart组合图表
+######CombinedChart组合图表
 ```Java
 @DuplexChart
 public class CombinedChart {
@@ -163,3 +163,58 @@ public class EChartsTest {
     }
 }
 ```
+`6`使用继承
+######编写view.json
+```javascript
+{
+  "title":{"text":"组合图表"},
+  "backgroundColor":"#fff"
+}
+```
+######修改CombinedChart.java
+```Java
+@DuplexChart(extendFrom = "view.json")//view.json放在同一个目录，不然要加上完整路径
+public class CombinedChart {
+//    @TextString
+//    String title;
+//    @BackgroundColorHex(value = 0xfff)
+//    int backgroundColor;
+    @AddSeries
+    LineChart lineChart;
+    @AddSeries
+    Line2Chart line2Chart;
+    @AddSeries
+    BarChart barChart;
+
+    public CombinedChart(String title) {
+//        this.title = title;//使用view.json提供的值
+        lineChart = new LineChart();
+        lineChart.setName("折线图");
+        lineChart.setData(new double[]{1,2,3,4});
+        line2Chart = new Line2Chart();
+        line2Chart.setName("折线图二");
+        line2Chart.setData(new double[]{1,2,3,4});
+        barChart = new BarChart();
+        barChart.setName("条形图");
+        barChart.setData(new double[]{5,6,7,8});
+    }
+}
+```
+######调用图表处理器
+```Java
+public class EChartsTest {
+    public static void main(String[] args) {
+        Object json=EChartsAnnotationProcessor.parseChart(new CombinedChart("组合图表"));
+        System.out.print(JSON.toJSONString(json));
+    }
+}
+```
+`7`导出json文件
+导出json文件供其它图表继承
+```Java
+@DuplexChart(exportTo = "templates/view.json")//调用图表处理器解析的同时，导出json文件
+@SingleChart(exportTo = "templates/view.json")//不建议和DuplexChart注解在同一个类中使用
+```
+##写在最后
+项目进度已基本完成，后期除了bug fix，不会再有大修改。请放心集成！
+另外，会推出对应taglib项目，可以尽量不让你写javascript就尽量不让你写！
