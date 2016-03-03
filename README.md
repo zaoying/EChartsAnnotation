@@ -68,7 +68,7 @@ maven
 ```
 gradle  
 ```Groovy
-compile(`cn.edu.gdut.zaoying:EChartsAnnotation:1.0`)
+compile('cn.edu.gdut.zaoying:EChartsAnnotation:1.0')
 ```
 `2`增加LineChart折线图
 ```Java
