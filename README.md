@@ -210,11 +210,11 @@ public class EChartsTest {
 }
 ```
 `7`导出json文件
-导出json文件供其它图表继承
+导出json文件供其它图表`继承`
 ```Java
 @DuplexChart(exportTo = "templates/view.json")//调用图表处理器解析的同时，导出json文件
 @SingleChart(exportTo = "templates/view.json")//不建议和DuplexChart注解在同一个类中使用
 ```
 ##写在最后
 项目进度已基本完成，后期除了bug fix，不会再有大修改。请放心集成！
-另外，会推出对应taglib项目，可以尽量不让你写javascript就尽量不让你写！
+另外，会推出对应`taglib`项目，可以尽量不让你写javascript就尽量不让你写！
