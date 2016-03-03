@@ -56,6 +56,19 @@ Function|Object|无|Function|由于Java不支持函数类型，所以需要重�
 将会提取源文件中`visualMap`下的注解并添加到`DuplexChart`   
 ## 如何使用 Get Started
 `phraseSingleChart`和`phraseDuplexChart`已合并到`parseChart`，不用再区分两者。  
+maven  
+```XML
+<dependency>
+  <groupId>cn.edu.gdut.zaoying</groupId>
+  <artifactId>EChartsAnnotation</artifactId>
+  <version>1.0</version>
+  <type>pom</type>
+</dependency>
+```
+gradle  
+```Groovy
+compile(`cn.edu.gdut.zaoying:EChartsAnnotation:1.0`)
+```
 `1`[添加EChartsAnnotation到项目](/out/artifacts/EChartsAnnotaion/EChartsAnnotaion.jar)  
 `2`增加LineChart折线图
 ```Java
