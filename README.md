@@ -55,7 +55,7 @@ Function|Object|无|Function|由于Java不支持函数类型，所以需要重�
 只能用于`DuplexChart`的域`Field`，若域不为null且域的类源文件被`SingleChart`注解标记，  
 将会提取源文件中`visualMap`下的注解并添加到`DuplexChart`   
 ## 如何使用 Get Started
-`phraseSingleChart`和`phraseDuplexChart`已合并到`parseChart`，不用再区分两者。
+`phraseSingleChart`和`phraseDuplexChart`已合并到`parseChart`，不用再区分两者。  
 `1`[添加EChartsAnnotation到项目](/out/artifacts/EChartsAnnotaion/EChartsAnnotaion.jar)  
 `2`增加LineChart折线图
 ```Java
