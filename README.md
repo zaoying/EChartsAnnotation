@@ -62,13 +62,13 @@ maven
 <dependency>
   <groupId>cn.edu.gdut.zaoying</groupId>
   <artifactId>EChartsAnnotation</artifactId>
-  <version>1.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
 gradle  
 ```Groovy
-compile('cn.edu.gdut.zaoying:EChartsAnnotation:1.0')
+compile('cn.edu.gdut.zaoying:EChartsAnnotation:1.0.1')
 ```
 `2`增加LineChart折线图
 ```Java
@@ -209,7 +209,7 @@ public class EChartsTest {
     }
 }
 ```
-`7`导出json文件
+`7`导出json文件  
 导出json文件供其它图表`继承`
 ```Java
 @DuplexChart(exportTo = "templates/view.json")//调用图表处理器解析的同时，导出json文件
