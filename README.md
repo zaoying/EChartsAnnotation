@@ -223,4 +223,5 @@ public class EChartsTest {
 ```
 ##写在最后
 项目进度已基本完成，后期除了bug fix，不会再有大修改。请放心集成！
-
+`Taglib`项目
+  [电梯](/zaoying/EChartsTaglib "EChartsTaglib")
