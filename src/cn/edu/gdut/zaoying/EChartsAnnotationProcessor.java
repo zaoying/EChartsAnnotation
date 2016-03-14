@@ -55,7 +55,7 @@ public class EChartsAnnotationProcessor {
             fileWriter.write(json);
             fileWriter.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("文件："+exportTo+"不存在！");
         }
     }
 
@@ -70,7 +70,7 @@ public class EChartsAnnotationProcessor {
                 if(dataZoom!=null)head.remove("dataZoom");
                 if(visualMap!=null)head.remove("visualMap");
             } catch (FileNotFoundException e) {
-                e.printStackTrace();
+                System.out.println("文件："+extendFrom+"不存在！");
             }
         }
     }
@@ -108,7 +108,6 @@ public class EChartsAnnotationProcessor {
                 Annotation addSeries=field.getAnnotation(AddSeries.class);
                 if(addSeries!=null){
                     Map<String,Object> hashMap= (Map<String, Object>) parse(new HashMap<String, Object>(),value).get("series");
-                    System.out.println(JSON.toJSONString(hashMap));
                     if(series==null)series=turnMapIntoList(hashMap);
                     else series.addAll(turnMapIntoList(hashMap));
                     continue;
