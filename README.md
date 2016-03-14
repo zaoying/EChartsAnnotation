@@ -68,7 +68,7 @@ gradle
 compile('cn.edu.gdut.zaoying:EChartsAnnotation:1.0.1')
 ```
 jar  
-[下载Jar包](zaoying/EChartsAnnotation/blob/master/out/artifacts/EChartsAnnotaion/EChartsAnnotaion.jar "点击下载EChartsAnnotation.jar")  
+[下载Jar包](https://github.com/zaoying/EChartsAnnotation/blob/master/out/artifacts/EChartsAnnotaion/EChartsAnnotaion.jar "点击下载EChartsAnnotation.jar")  
 `2`增加LineChart折线图
 ```Java
 @SingleChart(exportTo = "templates/lineChart.json")
