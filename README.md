@@ -59,13 +59,13 @@ maven
 <dependency>
   <groupId>cn.edu.gdut.zaoying</groupId>
   <artifactId>EChartsAnnotation</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <type>pom</type>
 </dependency>
 ```
 gradle  
 ```Groovy
-compile('cn.edu.gdut.zaoying:EChartsAnnotation:1.0.1')
+compile('cn.edu.gdut.zaoying:EChartsAnnotation:1.0.2')
 ```
 jar  
 [下载Jar包](https://github.com/zaoying/EChartsAnnotation/blob/master/out/artifacts/EChartsAnnotaion/EChartsAnnotaion.jar "点击下载EChartsAnnotation.jar")  
