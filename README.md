@@ -7,11 +7,8 @@
 `3`使用JSON系列化工具包（fastjson/gson）输出到前端页面  
 
 ## 注解 Annotation
-基于ECharts3.0制作
+基于ECharts3.0制作  
 [Option定义](http://echarts.baidu.com/documents/cn/option.json?_v_=1453695515722 "点击下载JSON文件")  
-从上述URL得到JSON文件总体上可以解析成树，除了series、dataZoom和visualMap三个节点需要特殊处理，  
-其他非叶子节点均可映射成文件系统的文件夹，而叶子节点则映射成Java源文件即注解文件。  
-![](/doc/Option_Annotation.png)  
 总共有3700+个注解！这里生成的注解只能用于标记Bean类的域`Field`  
 根据JSON树的叶子节点的Type属性中的不同类型，3700多注解分成6种不同类型:  
 
@@ -70,20 +67,43 @@ gradle
 ```Groovy
 compile('cn.edu.gdut.zaoying:EChartsAnnotation:1.0.1')
 ```
+jar  
+[下载Jar包](zaoying/EChartsAnnotation/raw/master/out/artifacts/EChartsAnnotaion/EChartsAnnotaion.jar "点击下载EChartsAnnotation.jar")  
 `2`增加LineChart折线图
 ```Java
-import cn.edu.gdut.zaoying.Option.series.line.DataArray;
-import cn.edu.gdut.zaoying.Option.series.line.NameString;
-import cn.edu.gdut.zaoying.SingleChart;
-
-@SingleChart(exportTo = "lineChart")
+@SingleChart(exportTo = "templates/lineChart.json")
 public class LineChart {
     @NameString
     String name;
     @DataArray
     double[] data;
+    @cn.edu.gdut.zaoying.Option.xAxis.NameString("横轴")
+    String xAxisName;
+    @TypeString("category")
+    String type;
+    @cn.edu.gdut.zaoying.Option.xAxis.DataArray
+    int[] xAxisData=new int[]{1,2,3,4};
+    @cn.edu.gdut.zaoying.Option.yAxis.NameString("纵轴")
+    String yAxisName;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double[] getData() {
+        return data;
+    }
+
+    public void setData(double[] data) {
+        this.data = data;
+    }
+
 }
 ```
+之前的例子因为少了`xAxis`和`yAxis`没法正常显示，这是ECharts的要求。  
 `3`调用图表处理器
 ```Java
 public class EChartsTest {
@@ -97,20 +117,6 @@ public class EChartsTest {
 }
 ```
 `4`编写更复杂的组合图表  
-######编写折线图二
-```Java
-import cn.edu.gdut.zaoying.Option.series.line.DataArray;
-import cn.edu.gdut.zaoying.Option.series.line.NameString;
-import cn.edu.gdut.zaoying.SingleChart;
-
-@SingleChart
-public class Line2Chart {
-    @NameString
-    String name;
-    @DataArray
-    double[] data;
-}
-```
 ######编写条形图
 ```Java
 import cn.edu.gdut.zaoying.Option.series.bar.DataArray;
@@ -136,7 +142,7 @@ public class CombinedChart {
     @AddSeries
     LineChart lineChart;
     @AddSeries
-    Line2Chart line2Chart;
+    LineChart lineChart2;
     @AddSeries
     BarChart barChart;
 
@@ -145,9 +151,9 @@ public class CombinedChart {
         lineChart = new LineChart();
         lineChart.setName("折线图");
         lineChart.setData(new double[]{1,2,3,4});
-        line2Chart = new Line2Chart();
-        line2Chart.setName("折线图二");
-        line2Chart.setData(new double[]{1,2,3,4});
+        lineChart2 = new LineChart();
+        lineChart2.setName("折线图二");
+        lineChart2.setData(new double[]{3,6,8,9});
         barChart = new BarChart();
         barChart.setName("条形图");
         barChart.setData(new double[]{5,6,7,8});
@@ -217,4 +223,4 @@ public class EChartsTest {
 ```
 ##写在最后
 项目进度已基本完成，后期除了bug fix，不会再有大修改。请放心集成！
-另外，会推出对应`taglib`项目，可以尽量不让你写javascript就尽量不让你写！
+
