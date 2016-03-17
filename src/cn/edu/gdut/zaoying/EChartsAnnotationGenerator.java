@@ -14,6 +14,10 @@ import static cn.edu.gdut.zaoying.Util.toFirstLetterUpperCase;
 /**
  * Created by huang on 2016/3/3 0003.
  */
+
+/**
+ * 注解生成器
+ */
 public class EChartsAnnotationGenerator {
     File current;
     int count=0;
@@ -21,12 +25,18 @@ public class EChartsAnnotationGenerator {
         current=new File("src/cn/edu/gdut/zaoying/Option/");
     }
 
+    /**
+     * 生成注解
+     */
     public void generateAnnotation(){
         generateAnnotation4Option();
         generateAnnotation4Array();
         System.out.println("共生成"+count+"个注解");
     }
 
+    /**
+     * 读取json/array.json并生成注解
+     */
     void generateAnnotation4Array(){
         StringBuilder stringBuilder=new StringBuilder(2*1024*1024);
         try {
@@ -67,6 +77,9 @@ public class EChartsAnnotationGenerator {
         }
     }
 
+    /**
+     * 读取json/option.json并生成注解
+     */
     void generateAnnotation4Option(){
         StringBuilder stringBuilder=new StringBuilder(1024*1024);
         try {
@@ -84,6 +97,11 @@ public class EChartsAnnotationGenerator {
         }
     }
 
+    /**
+     * 递归遍历树并生成注解
+     * @param single
+     * @param name
+     */
     void traversalTree(Single single, String name){
         Map<String,Single> properties=single.getProperties();
         if(properties!=null&&!properties.isEmpty()){
@@ -174,6 +192,12 @@ public class EChartsAnnotationGenerator {
         }
     }
 
+    /**
+     * 创建文件夹
+     * @param fileName 文件夹路径
+     * @return File
+     * @throws IOException
+     */
     File createFolder(String fileName) throws IOException {
         File newFile=new File(current.getPath()+"/"+fileName);
         //System.out.println(newFile.getPath());
@@ -181,6 +205,12 @@ public class EChartsAnnotationGenerator {
         return newFile;
     }
 
+    /**
+     * 创建文件
+     * @param fileName 文件夹路径
+     * @return File
+     * @throws IOException
+     */
     File createFile(String fileName) throws IOException {
         File newFile=new File(current.getPath()+"/"+fileName);
         //System.out.println(newFile.getPath());
