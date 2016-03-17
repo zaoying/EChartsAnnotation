@@ -19,7 +19,7 @@ Color|int|0|Hex|Web颜色映射成Java整型，由于常用16进制表示所以�
 number|Number|0|Number|抽象类Number是int、double等基本类型的父类，一律转为double
 string|String|""|String|字符串类型
 Array|List|无|Array|数组类型一律转成泛型List
-Function|Object|无|Function|由于Java不支持函数类型，所以需要重载Object的toString方法输出字符串的“函数”
+Function|Object|无|Function|由于Java不支持函数类型，所以需要实现fastjson接口JSONAware的toJSONString方法输出字符串的“函数”
 *|Object|无|All|参考Function类型
 
 按注解的参数个数分，可以分为两种：  
