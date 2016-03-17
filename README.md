@@ -221,6 +221,36 @@ public class EChartsTest {
 @DuplexChart(exportTo = "templates/view.json")//调用图表处理器解析的同时，导出json文件
 @SingleChart(exportTo = "templates/view.json")//不建议和DuplexChart注解在同一个类中使用
 ```
+`8`添加Function
+```Java
+import com.alibaba.fastjson.JSONAware;
+public class Function implements JSONAware{//实现JSONAware接口
+    String method;
+    String arguments;
+    String body;
+    
+    public Function(String method, String arguments, String body) {
+        this.method = method;
+        this.arguments = arguments;
+        this.body = body;
+    }
+    @Override
+    public String toJSONString() {
+        return "function "+method+" ("+arguments+"){\n"+body+"\n}";
+    }
+}
+```
+`9`测试
+```Java
+import com.alibaba.fastjson.JSON;
+
+public class ECharts {
+    public static void main(String[] args) {
+        Function function=new Function("toString","str","alert();");
+        System.out.println(JSON.toJSONString(function));
+    }
+}
+```
 ##写在最后
 项目进度已基本完成，后期除了bug fix，不会再有大修改。请放心集成！
 `Taglib`项目
